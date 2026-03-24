@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public class Main {
+package PACKAGE_NAME;
+
+public class Main {
+
 }
