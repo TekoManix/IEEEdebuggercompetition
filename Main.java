@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import java.io.File;
 import java.util.Scanner;
 
@@ -67,3 +68,10 @@ public class Main {
 
     }
 }
+=======
+package PACKAGE_NAME;
+
+public class Main {
+
+}
+>>>>>>> f6974f4ba852f7a338b823eee0c7426ed9d473bb

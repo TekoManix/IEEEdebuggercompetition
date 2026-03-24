@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import org.junit.*;
 
 public class Tests {
@@ -53,4 +54,10 @@ public class Tests {
     public void Test10(){
 
     }
+=======
+package PACKAGE_NAME;
+
+public class Tests {
+
+>>>>>>> f6974f4ba852f7a338b823eee0c7426ed9d473bb
 }
