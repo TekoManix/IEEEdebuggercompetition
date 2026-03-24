@@ -1,5 +1,5 @@
 import java.io.File;
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * All Solutions go here
@@ -8,7 +8,6 @@ public class Solutions {
 
     public static void main(String[] args) {
         task1();
-
     }
 
     public static void task1(){
