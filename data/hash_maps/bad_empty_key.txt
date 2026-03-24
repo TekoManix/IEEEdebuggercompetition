@@ -1,0 +1,3 @@
+: Alice
+age: 30
+grade: A

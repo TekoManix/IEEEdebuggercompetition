@@ -1,0 +1,11 @@
+# JetBrains Rider / IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+build/
+*.class
+
+# Solutions (keep off main branch)
+Solutions.java
