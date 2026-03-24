@@ -1,12 +1,13 @@
 import org.junit.*;
+import org.junit.Assert;
 
 public class TestCases {
 
     @Test
     public void Test1() {
-        //PLEASE USE ASSERTIONS TO WRITE TESTS THIS WAS IN PLACE TO SET UP THE FILE AND MAKE SURE JUNITS ARE WORKING
-        int a = 1;
-        Assert.assertEquals(1, a);
+
+        boolean task1 =  Main.task1_Valid_Password();
+        Assert.assertTrue(task1);
     }
 
     @Test

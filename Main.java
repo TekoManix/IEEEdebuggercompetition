@@ -9,26 +9,60 @@ import java.util.Scanner;
  */
 public class Main {
 
-    public static void main(String[] args) {
-        task1();
+    /*public static void main(String[] args) {
+        task1_Valid_Password();
 
-    }
+    }*/
 
-    public static void task1(){
+    public static boolean task1_Valid_Password(){
+        boolean pass = false;
+        String password = "";
         try {
-            File f = new File("data.txt");
+            File f = new File("task1_Valid_Password.txt");
             Scanner file = new Scanner(f);
-
-
-
-
-
-
-
-
+            while(file.hasNext()){
+                password += file.nextLine();
+            }
         }catch (Exception e){
-            System.out.println("Can't open file, 'data.txt'");
+            System.out.println("Can't open file, 'task1_Valid_Password.txt'");
         }
+            if(password.length() < 9){
+                return false;
+            }
+
+            if(!(password.charAt(6) == 'c' && password.charAt(8) == 'a')) {
+                return false;
+            }
+
+            if(!password.contains("IEEE")){
+                return false;
+            }
+            boolean nCheck = false;
+            for(int i = 0; i < password.length(); i++) {
+                if (password.charAt(i) == password.charAt(i + 1) && password.charAt(i) != 'E') {
+                    return false;
+                }
+                var str = password.substring(i, i + 1);
+                try {
+                    Integer.parseInt(str);
+                    nCheck = true;
+                    break;
+                } catch (NumberFormatException _) {
+
+                }
+            }
+            if(!nCheck){
+                return false;
+            }
+
+            if(!(password.contains("!") || password.contains("?") || password.contains("~"))){
+                return false;
+            }
+
+            pass = true;
+
+
+        return pass;
     }
 
     public static void task2(){
