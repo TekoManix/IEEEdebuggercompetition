@@ -1,0 +1,5 @@
+name: Alice
+age: 30
+student_id: 12345
+course: CS101
+grade: A

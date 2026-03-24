@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="28ce3264-8f1e-47e0-9770-ec54ad0af5ce" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/binary_trees/bad_duplicates.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/binary_trees/bad_ordering.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/binary_trees/bad_syntax.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/binary_trees/bad_values.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/binary_trees/valid_bst.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/binary_trees/valid_single_node.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/hash_maps/bad_duplicate_keys.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/hash_maps/bad_empty_key.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/hash_maps/bad_empty_value.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/hash_maps/bad_syntax.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/hash_maps/valid_map.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solutions.java" beforeDir="false" afterPath="$PROJECT_DIR$/Solutions.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="3AjK0DRpgbguf9kDiy0ZsVQzuT4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "solutions",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/tekom/Desktop/IEEEdebuggercompetition"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.23892.409" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="28ce3264-8f1e-47e0-9770-ec54ad0af5ce" name="Changes" comment="" />
+      <created>1773100314522</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1773100314522</updated>
+    </task>
+    <servers />
+  </component>
+</project>
