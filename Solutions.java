@@ -10,7 +10,7 @@ public class Solutions {
         task1();
     }
 
-    public static void task1(){
+    public static void task1() {
         try {
             File f = new File("data.txt");
             Scanner file = new Scanner(f);
@@ -22,16 +22,16 @@ public class Solutions {
 
 
 
-        }catch (Exception e){
+        } catch (Exception e) {
             System.out.println("Can't open file, 'data.txt'");
         }
     }
 
-    public static void task2(){
+    public static void task2() {
 
     }
 
-    public void task3(){
+    public void task3() {
 
     }
 
@@ -109,15 +109,15 @@ public class Solutions {
         return duplicates;
     }
 
-    public void task8(){
+    public void task8() {
 
     }
 
-    public void task9(){
+    public void task9() {
 
     }
 
-    public void task10(){
+    public void task10() {
 
     }
 }
