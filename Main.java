@@ -1,4 +1,6 @@
 import java.io.File;
+import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
 
 /**
@@ -48,7 +50,7 @@ public class Main {
                 Integer.parseInt(str);
                 nCheck = true;
                 break;
-            } catch (NumberFormatException _) {
+            } catch (NumberFormatException ignore) {
 
             }
         }
@@ -89,16 +91,18 @@ public class Main {
      * Reads the tree from file, then traverses to find the target.
      * Returns true if found, false otherwise.
      */
-    public void task4(){
+    public static boolean task4(String filePath, int target) throws Exception {
         //TODO
+        return false;
     }
 
     /**
      * Task 5: In-order traversal of a BST.
      * Reads the tree from file, returns values in sorted order.
      */
-    public void task5(){
+    public static List<Integer> task5(String filePath) throws Exception {
         //TODO
+        return null;
     }
 
     /**
@@ -106,8 +110,9 @@ public class Main {
      * Reads the map from file, returns the value for the given key.
      * Returns null if the key is not found.
      */
-    public void task6(){
+    public static String task6(String filePath, String key) throws Exception {
         //TODO
+        return null;
     }
 
     /**
@@ -115,8 +120,9 @@ public class Main {
      * Reads the map from file, returns a map of value -> list of keys
      * for any value that appears more than once.
      */
-    public void task7(){
+    public static Map<String, List<String>> task7(String filePath) throws Exception {
         //TODO
+        return null;
     }
 
     /**
