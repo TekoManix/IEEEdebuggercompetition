@@ -1,4 +1,6 @@
 import java.io.File;
+import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
 
 /**
@@ -35,35 +37,35 @@ public class Main {
 
     }
 
-    public void task3(){
+    public static void task3(){
 
     }
 
-    public void task4(){
-
+    public static boolean task4(String filePath, int target) throws Exception {
+        return false;
     }
 
-    public void task5(){
-
+    public static List<Integer> task5(String filePath) throws Exception {
+        return null;
     }
 
-    public void task6(){
-
+    public static String task6(String filePath, String key) throws Exception {
+        return null;
     }
 
-    public void task7(){
-
+    public static Map<String, List<String>> task7(String filePath) throws Exception {
+        return null;
     }
 
-    public void task8(){
+    public static void task8(){
 
     }
     
-    public void task9(){
+    public static void task9(){
         
     }
     
-    public void task10(){
+    public static void task10(){
         
     }
 }

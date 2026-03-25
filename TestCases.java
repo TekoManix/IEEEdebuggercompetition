@@ -1,7 +1,7 @@
 import org.junit.*;
 import java.util.*;
 
-public class Tests {
+public class TestCases {
 
     @Test
     public void Test1(){
@@ -28,17 +28,17 @@ public class Tests {
 
         // Values that exist in the tree: (10 (5 (3 _ _) (7 _ _)) (15 (12 _ _) (20 _ _)))
         Assert.assertTrue("Should find root value 10",
-            Main.task4(Main, 10));
+            Main.task4(path, 10));
         Assert.assertTrue("Should find leaf value 3",
-            Main.task4(Main, 3));
+            Main.task4(path, 3));
         Assert.assertTrue("Should find right subtree value 20",
-            Main.task4(Main, 20));
+            Main.task4(path, 20));
 
         // Values that do NOT exist
         Assert.assertFalse("Should not find value 99",
-            Main.task4(Main, 99));
+            Main.task4(path, 99));
         Assert.assertFalse("Should not find value 0",
-            Main.task4(Main, 0));
+            Main.task4(path, 0));
     }
 
     // TASK 5: IN-ORDER TRAVERSAL
@@ -72,8 +72,7 @@ public class Tests {
             "12345", Main.task6(path, "student_id"));
 
         // Key that does NOT exist
-        Assert.assertNull("Should return null for missing key",
-            .task6(path, "email"));
+        Assert.assertNull("Should return null for missing key", Main.task6(path, "email"));
     }
 
     // TASK 7: FIND DUPLICATE VALUES
