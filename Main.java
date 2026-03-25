@@ -9,16 +9,16 @@ import java.util.Scanner;
  */
 public class Main {
 
-    /*public static void main(String[] args) {
-        task1_Valid_Password();
-
-    }*/
-
+    /**
+     * Please traverse the algorithm below and derive a valid password that can pass this algorithm.
+     * Use the debugger to help you see how the gets checked if you get stuck.
+     * @return
+     */
     public static boolean task1_Valid_Password(){
         boolean pass = false;
         String password = "";
         try {
-            File f = new File("task1_Valid_Password.txt");
+            File f = new File("data/task1/task1_Valid_Password.txt");
             Scanner file = new Scanner(f);
             while(file.hasNext()){
                 password += file.nextLine();
@@ -65,6 +65,9 @@ public class Main {
         return pass;
     }
 
+    /**
+     * Make 'remove' function to IEEE_LinkedList class
+     */
     public static void task2(){
 
     }
