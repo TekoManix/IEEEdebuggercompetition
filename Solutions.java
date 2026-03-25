@@ -1,4 +1,3 @@
-import java.io.File;
 import java.util.*;
 
 /**
@@ -11,15 +10,63 @@ public class Solutions {
     }
 
     public static void task1() {
+        //IEEEf!c7a
+        // is a valid password
 
     }
 
+    //WRITTEN IN LINKED LIST CLASS
     public static void task2() {
+        /*
+        //Special Case to remove head
+        if(index < 0){
+            head = head.next;
+        } else {
+            //Find Node Before the one we want to remove
+            Node prev = head
+            for(int i = 0; i < index -1 i++){
+                prev = prev.next;
+            }
 
+            //Delete the Node
+            Node del = prev.next;
+
+            //Make sure it still connects
+            prev.next = del.next;
+        }
+        size --; //To reflect the new size of the Linked List
+
+         */
     }
 
+    //WRITTEN IN LINKED LIST CLASS
     public void task3() {
 
+        /*
+        if(i < 0 || i > size || j < 0 || j >= size) {
+            throw new IndexOutOfBoundsException();
+        }
+
+        if(i == j){
+            return;
+        }
+
+        //Find Node at i
+        Node Ni = head;
+        for(int k = 0; k < i; k++){
+            Ni = Ni.next;
+        }
+
+        //Find Node at j
+        Node Nj = head;
+        for(int k = 0; k < j; k++){
+            Nj = node.next;
+        }
+
+        int temp = Ni.data;
+        Ni.data = Nj.data;
+        Nj.data = temp;
+        */
     }
 
     /**
@@ -96,15 +143,42 @@ public class Solutions {
         return duplicates;
     }
 
-    public void task8() {
-
+    public static int task8(int[] nums) {
+        if (nums == null || nums.length == 0) {
+            return -1;
+        }
+        int max = nums[0];
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i] > max) {
+                max = nums[i];
+            }
+        }
+        return max;
     }
 
-    public void task9() {
-
+    public static boolean task9(String s) {
+        if (s == null) return false;
+        int left = 0;
+        int right = s.length() - 1;
+        while (left < right) {
+            if (s.charAt(left) != s.charAt(right)) {
+                return false;
+            }
+            left++;
+            right--;
+        }
+        return true;
     }
 
-    public void task10() {
-
+    public static void task10(int[] nums) {
+        int left = 0;
+        int right = nums.length - 1;
+        while (left < right) {
+            int temp = nums[left];
+            nums[left] = nums[right];
+            nums[right] = temp;
+            left++;
+            right--;
+        }
     }
 }
