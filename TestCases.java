@@ -71,17 +71,17 @@ public class TestCases {
 
         // Values that exist in the tree: (10 (5 (3 _ _) (7 _ _)) (15 (12 _ _) (20 _ _)))
         Assert.assertTrue("Should find root value 10",
-                Solutions.task4(path, 10));
+                Main.task4(path, 10));
         Assert.assertTrue("Should find leaf value 3",
-                Solutions.task4(path, 3));
+                Main.task4(path, 3));
         Assert.assertTrue("Should find right subtree value 20",
-                Solutions.task4(path, 20));
+                Main.task4(path, 20));
 
         // Values that do NOT exist
         Assert.assertFalse("Should not find value 99",
-                Solutions.task4(path, 99));
+                Main.task4(path, 99));
         Assert.assertFalse("Should not find value 0",
-                Solutions.task4(path, 0));
+                Main.task4(path, 0));
     }
 
     /**
@@ -90,13 +90,13 @@ public class TestCases {
     @Test
     public void Test5() throws Exception {
         // In-order of valid_bst.txt should be sorted: [3, 5, 7, 10, 12, 15, 20]
-        List<Integer> result = Solutions.task5("data/binary_trees/valid_bst.txt");
+        List<Integer> result = Main.task5("data/binary_trees/valid_bst.txt");
         List<Integer> expected = Arrays.asList(3, 5, 7, 10, 12, 15, 20);
         Assert.assertEquals("In-order traversal should return sorted values",
                 expected, result);
 
         // Single node tree: (42 _ _) -> [42]
-        List<Integer> single = Solutions.task5("data/binary_trees/valid_single_node.txt");
+        List<Integer> single = Main.task5("data/binary_trees/valid_single_node.txt");
         Assert.assertEquals("Single node should return one element",
                 Collections.singletonList(42), single);
     }
@@ -110,15 +110,14 @@ public class TestCases {
 
         // Keys that exist
         Assert.assertEquals("Should find 'name'",
-                "Alice", Solutions.task6(path, "name"));
+                "Alice", Main.task6(path, "name"));
         Assert.assertEquals("Should find 'age'",
-                "30", Solutions.task6(path, "age"));
+                "30", Main.task6(path, "age"));
         Assert.assertEquals("Should find 'student_id'",
-                "12345", Solutions.task6(path, "student_id"));
+                "12345", Main.task6(path, "student_id"));
 
         // Key that does NOT exist
-        Assert.assertNull("Should return null for missing key",
-                Solutions.task6(path, "email"));
+        Assert.assertNull("Should return null for missing key", Main.task6(path, "email"));
     }
 
     /**
@@ -128,11 +127,10 @@ public class TestCases {
     public void Test7() throws Exception {
         // valid_map.txt has all unique values — no duplicates expected
         Map<String, List<String>> dupes =
-                Solutions.task7("data/hash_maps/valid_map.txt");
+                Main.task7("data/hash_maps/valid_map.txt");
         Assert.assertTrue("No duplicate values in valid_map.txt",
                 dupes.isEmpty());
     }
-
 
     /**
      * Task 8: Max Value in a given array

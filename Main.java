@@ -1,4 +1,6 @@
 import java.io.File;
+import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
 
 /**
@@ -27,40 +29,40 @@ public class Main {
         }catch (Exception e){
             System.out.println("Can't open file, 'task1_Valid_Password.txt'");
         }
-            if(password.length() < 9){
+        if(password.length() < 9){
+            return false;
+        }
+
+        if(!(password.charAt(6) == 'c' && password.charAt(8) == 'a')) {
+            return false;
+        }
+
+        if(!password.contains("IEEE")){
+            return false;
+        }
+        boolean nCheck = false;
+        for(int i = 0; i < password.length(); i++) {
+            if (password.charAt(i) == password.charAt(i + 1) && password.charAt(i) != 'E') {
                 return false;
             }
+            var str = password.substring(i, i + 1);
+            try {
+                Integer.parseInt(str);
+                nCheck = true;
+                break;
+            } catch (NumberFormatException ignore) {
 
-            if(!(password.charAt(6) == 'c' && password.charAt(8) == 'a')) {
-                return false;
             }
+        }
+        if(!nCheck){
+            return false;
+        }
 
-            if(!password.contains("IEEE")){
-                return false;
-            }
-            boolean nCheck = false;
-            for(int i = 0; i < password.length(); i++) {
-                if (password.charAt(i) == password.charAt(i + 1) && password.charAt(i) != 'E') {
-                    return false;
-                }
-                var str = password.substring(i, i + 1);
-                try {
-                    Integer.parseInt(str);
-                    nCheck = true;
-                    break;
-                } catch (NumberFormatException ignore) {
+        if(!(password.contains("!") || password.contains("?") || password.contains("~"))){
+            return false;
+        }
 
-                }
-            }
-            if(!nCheck){
-                return false;
-            }
-
-            if(!(password.contains("!") || password.contains("?") || password.contains("~"))){
-                return false;
-            }
-
-            pass = true;
+        pass = true;
 
 
         return pass;
@@ -72,7 +74,7 @@ public class Main {
      * is entered is removed and no data is left behind
      */
     //task2
-        //TODO: Please write remove algorithm in IEEE_Linked_List Class
+    //TODO: Please write remove algorithm in IEEE_Linked_List Class
 
 
     /**
@@ -81,7 +83,7 @@ public class Main {
      * are entered are swapped and no data is left behind.
      */
     //TASK3
-        //TODO: Please write remove algorithm in IEEE_Linked_List Class
+    //TODO: Please write remove algorithm in IEEE_Linked_List Class
 
 
     /**
@@ -89,16 +91,18 @@ public class Main {
      * Reads the tree from file, then traverses to find the target.
      * Returns true if found, false otherwise.
      */
-    public void task4(){
+    public static boolean task4(String filePath, int target) throws Exception {
         //TODO
+        return false;
     }
 
     /**
      * Task 5: In-order traversal of a BST.
      * Reads the tree from file, returns values in sorted order.
      */
-    public void task5(){
+    public static List<Integer> task5(String filePath) throws Exception {
         //TODO
+        return null;
     }
 
     /**
@@ -106,8 +110,9 @@ public class Main {
      * Reads the map from file, returns the value for the given key.
      * Returns null if the key is not found.
      */
-    public void task6(){
+    public static String task6(String filePath, String key) throws Exception {
         //TODO
+        return null;
     }
 
     /**
@@ -115,8 +120,9 @@ public class Main {
      * Reads the map from file, returns a map of value -> list of keys
      * for any value that appears more than once.
      */
-    public void task7(){
+    public static Map<String, List<String>> task7(String filePath) throws Exception {
         //TODO
+        return null;
     }
 
     /**
@@ -144,6 +150,5 @@ public class Main {
      */
     public static void task10(int[] nums) {
         //TODO
-        return;
     }
 }
