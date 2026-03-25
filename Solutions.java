@@ -11,20 +11,7 @@ public class Solutions {
     }
 
     public static void task1() {
-        try {
-            File f = new File("data.txt");
-            Scanner file = new Scanner(f);
 
-
-
-
-
-
-
-
-        } catch (Exception e) {
-            System.out.println("Can't open file, 'data.txt'");
-        }
     }
 
     public static void task2() {
