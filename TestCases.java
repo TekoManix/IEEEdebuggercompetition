@@ -161,7 +161,7 @@ public class TestCases {
     @Test
     public void Test9() {
         Assert.assertTrue(Main.task9("racecar"));
-
+        Assert.assertFalse(Main.task9("orange"));
 
     }
 
