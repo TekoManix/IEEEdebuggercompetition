@@ -7,7 +7,7 @@ public class TestCases {
 
     @Test
     /**
-     * Password Cracking
+     * Task 1: Password Cracking
      */
     public void Test1() {
 
@@ -16,7 +16,7 @@ public class TestCases {
     }
 
     /**
-     * Linked List Remove Function
+     *  Task 2: Linked List Remove Function
      */
     @Test
     public void Test2() {
@@ -39,7 +39,7 @@ public class TestCases {
     }
 
     /**
-     * Linked List swap function
+     * Task 3: Linked List swap function
      */
     @Test
     public void Test3() {
@@ -62,8 +62,9 @@ public class TestCases {
 
     }
 
-    // TASK 4: BST SEARCH
-
+    /**
+     * TASK 4: BST SEARCH
+     */
     @Test
     public void Test4() throws Exception {
         String path = "data/binary_trees/valid_bst.txt";
@@ -83,8 +84,9 @@ public class TestCases {
                 Solutions.task4(path, 0));
     }
 
-    // TASK 5: IN-ORDER TRAVERSAL
-
+    /**
+     * TASK 5: IN-ORDER TRAVERSAL
+     */
     @Test
     public void Test5() throws Exception {
         // In-order of valid_bst.txt should be sorted: [3, 5, 7, 10, 12, 15, 20]
@@ -99,8 +101,9 @@ public class TestCases {
                 Collections.singletonList(42), single);
     }
 
-    // TASK 6: HASH MAP LOOKUP
-
+    /**
+     * TASK 6: HASH MAP LOOKUP
+     */
     @Test
     public void Test6() throws Exception {
         String path = "data/hash_maps/valid_map.txt";
@@ -118,8 +121,9 @@ public class TestCases {
                 Solutions.task6(path, "email"));
     }
 
-    // TASK 7: FIND DUPLICATE VALUES
-
+    /**
+     * TASK 7: FIND DUPLICATE VALUES
+     */
     @Test
     public void Test7() throws Exception {
         // valid_map.txt has all unique values — no duplicates expected
@@ -130,18 +134,48 @@ public class TestCases {
     }
 
 
+    /**
+     * Task 8: Max Value in a given array
+     */
     @Test
     public void Test8() {
+        int[] test = new int[10];
+
+        for(int i = 0; i < 10; i++){
+            if(i % 3 == 0){
+                test[i] = i * 10;
+            }else{
+                test[i] = i * 2;
+            }
+        }
+
+        var t = Main.task8(test);
+        Assert.assertEquals(t, 90);
+
 
     }
 
+    /**
+     * Task 9: Palindrome Check function
+     */
     @Test
     public void Test9() {
+        Assert.assertTrue(Main.task9("racecar"));
+
 
     }
 
+    /**
+     * Task 10: Reversing array order
+     */
     @Test
     public void Test10() {
+        int[] test = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16};
+        int[] accepted = new int[]{16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
 
+        Main.task10(test);
+        for(int i = 0; i < test.length; i++) {
+            Assert.assertEquals(test[i], accepted[i]);
+        }
     }
 }
