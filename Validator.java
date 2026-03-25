@@ -134,8 +134,7 @@ public class Validator {
     private static boolean bstHelper(TreeNode node, long min, long max) {
         if (node == null) return true;
         if (node.value <= min || node.value >= max) return false;
-        return bstHelper(node.left, min, node.value)
-            && bstHelper(node.right, node.value, max);
+        return bstHelper(node.left, min, node.value) && bstHelper(node.right, node.value, max);
     }
 
     /** Returns true if no value appears more than once. */
@@ -146,8 +145,7 @@ public class Validator {
     private static boolean collectValues(TreeNode node, Set<Integer> seen) {
         if (node == null) return true;
         if (!seen.add(node.value)) return false;
-        return collectValues(node.left, seen)
-            && collectValues(node.right, seen);
+        return collectValues(node.left, seen) && collectValues(node.right, seen);
     }
 
     // Hash map parsing
