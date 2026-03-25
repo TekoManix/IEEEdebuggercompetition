@@ -5,10 +5,6 @@ import java.util.*;
  */
 public class Solutions {
 
-    public static void main(String[] args) {
-        task1();
-    }
-
     public static void task1() {
         //IEEEf!c7a
         // is a valid password
