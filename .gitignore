@@ -8,3 +8,4 @@ build/
 *.class
 
 # Solutions (keep off main branch)
+Solutions.java
